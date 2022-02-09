@@ -105,6 +105,21 @@ function articleMaker(obj){
   articelTitle.classList.add('title');
   articleDate.classList.add('date');
 
+
+//   const para = document.createElement("p");
+// const node = document.createTextNode("This is a paragraph.");
+
+// para.appendChild(node);
+// document.getElementById("myDIV").appendChild(para);
+
+  articleContainer.appendChild(articelTitle);
+  articleContainer.appendChild(articleDate);
+  articleContainer.appendChild(articleParagraphOne);
+  articleContainer.appendChild(articleParagraphTwo);
+  articleContainer.appendChild(articleParagraphThree);
+  articleContainer.appendChild(expandButton);
+
+
 }
 
 /*
