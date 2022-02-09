@@ -125,6 +125,8 @@ function articleMaker(obj){
   articleParagraphTwo.textContent = articleObj.paragraphTwo;
   articleParagraphThree.textContent = articleObj.paragraphThree;
   expandButton.textContent = "+";
+
+  
   expandButton.addEventListener('click', () => {
   articleContainer.classList.toggle('article-open');
 
