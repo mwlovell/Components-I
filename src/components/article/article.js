@@ -99,6 +99,12 @@ function articleMaker(obj){
   const articleParagraphThree = document.createElement('p');
   const expandButton = document.createElement('span');
 
+//   let myPara = getElementById('para');
+// myPara.classList.add('myClass');
+  articleContainer.classList.add('article');
+  articelTitle.classList.add('title');
+  articleDate.classList.add('date');
+
 }
 
 /*
