@@ -92,7 +92,7 @@ const data = [
 
 function articleMaker(obj){
   const articleContainer = document.createElement('div');
-  const articelTitle = document.createElement('h2');
+  const articleTitle = document.createElement('h2');
   const articleDate = document.createElement('p');
   const articleParagraphOne = document.createElement('p');
   const articleParagraphTwo = document.createElement('p');
@@ -102,7 +102,7 @@ function articleMaker(obj){
 //   let myPara = getElementById('para');
 // myPara.classList.add('myClass');
   articleContainer.classList.add('article');
-  articelTitle.classList.add('title');
+  articleTitle.classList.add('title');
   articleDate.classList.add('date');
 
 
@@ -112,12 +112,21 @@ function articleMaker(obj){
 // para.appendChild(node);
 // document.getElementById("myDIV").appendChild(para);
 
-  articleContainer.appendChild(articelTitle);
+  articleContainer.appendChild(articleTitle);
   articleContainer.appendChild(articleDate);
   articleContainer.appendChild(articleParagraphOne);
   articleContainer.appendChild(articleParagraphTwo);
   articleContainer.appendChild(articleParagraphThree);
   articleContainer.appendChild(expandButton);
+
+  articleTitle.textContent = articleObj.title;
+  articleDate.textContent = articleObj.date;
+  articleParagraphOne.textContent = articleObj.paragraphOne;
+  articleParagraphTwo.textContent = articleObj.paragraphTwo;
+  articleParagraphThree.textContent = articleObj.paragraphThree;
+  expandButton.textContent = "+";
+
+
 
 
 }
